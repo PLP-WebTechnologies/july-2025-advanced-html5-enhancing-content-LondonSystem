@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>network provider</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 500px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+      color: #145;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.3rem;
+      text-align: left;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      margin: 0.5rem 0;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 0.3rem;
+      margin-top: 0.2rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background: #145;
+      color: #fff;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>sharp net</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>high speed & wide coverage</li>
+        <li>reliable 24/7</li>
+        <li>affordable flexible plan</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Plans</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$5/mo</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$15/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+      <img src="https://via.placeholder.com/480x150" alt="Placeholder image" />
+      <video controls>
+        <source
+          src="https://www.pexels.com/video/digital-projection-of-neon-abstract-geometrical-line-of-a-communication-network-3129540/"
+          type="video/webm" />
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        Video not supported.
+      </video>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" required minlength="3" pattern="^[a-zA-Z\s'-]+$"
+            placeholder="Jane Doe" autocomplete="name" />
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required placeholder="email@example.com" autocomplete="email" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account</legend>
+          <label for="username">Username *</label>
+          <input id="username" name="username" type="text" required minlength="5" maxlength="15" pattern="^\w{5,15}$"
+            placeholder="user123" autocomplete="username" />
+
+          <label for="password">Password *</label>
+          <input id="password" name="password" type="password" required minlength="8"
+            pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" autocomplete="new-password" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="plan">Plan *</label>
+          <select id="plan" name="plan" required>
+            <option value="">Select</option>
+            <option value="basic">Basic</option>
+            <option value="pro">Pro</option>
+          </select>
+
+          <label><input type="checkbox" name="newsletter" checked /> Subscribe</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 sharp net</p>
+  </footer>
+
+</body>
+
+</html>
